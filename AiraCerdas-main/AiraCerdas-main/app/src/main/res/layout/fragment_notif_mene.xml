@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/warna_bg"
+    tools:context=".Manajemen.ProfileMene">
+
+    <!-- Top section with rounded corners -->
+    <RelativeLayout
+        android:id="@+id/topSection"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/rounded_top_background"
+        android:paddingTop="30dp"
+        android:paddingBottom="30dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="20dp" />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/notifikasi"
+        android:layout_centerHorizontal="true"
+        android:text="Notifikasi"
+        android:textColor="#C0D0EF"
+        android:textSize="30dp"
+        android:layout_marginTop="70dp"
+        />
+
+
+    <LinearLayout
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/notifikasi"
+        android:background="@drawable/framenotif"
+        android:layout_marginTop="100dp"
+        android:orientation="vertical"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="showEditNotificationDialog">
+
+        <TextView
+            android:id="@+id/lokasi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Ruang TU FTI Yarsi"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/keterangan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="Air Galon Hampir Habis!"
+            android:textSize="18dp"
+            android:textStyle="bold"
+
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/frame1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/frame"
+        android:background="@drawable/framenotif"
+        android:orientation="vertical"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="showEditNotificationDialog">
+
+        <TextView
+            android:id="@+id/lokasi1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Ruang Dosen FTI  Yarsi"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/keterangan1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="Air Galon Hampir Habis!"
+            android:textSize="18dp"
+            android:textStyle="bold"
+
+            />
+
+    </LinearLayout>
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/frame1"
+        android:id="@+id/editwaktu"
+        android:text="Edit Durasi Waktu"
+        android:textAllCaps="false"
+        android:background="@drawable/button"
+        android:textColor="@color/white"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="200dp"
+        android:onClick="showEditWaktuDialog"
+
+        />
+
+
+
+
+</RelativeLayout>

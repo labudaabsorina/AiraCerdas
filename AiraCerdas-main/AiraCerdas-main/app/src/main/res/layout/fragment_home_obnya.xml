@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Ob.HomeObnya">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/warna_bg"
+        android:padding="16dp">
+
+        <!-- Profile Section -->
+        <LinearLayout
+            android:id="@+id/profile_section"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+
+            <ImageView
+                android:id="@+id/fotoProfile"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="#E0E0E0"
+                android:layout_marginEnd="8dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:id="@+id/nama"
+                    android:layout_height="wrap_content"
+                    android:text="Nama"
+                    android:textSize="20dp"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/jabatannya"
+                    android:text="Jabatan"
+                    android:textSize="17sp"
+                    android:textColor="#000000" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Date and Time Section Container -->
+        <HorizontalScrollView
+            android:id="@+id/containerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/profile_section">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:id="@+id/left_date_time_section"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/button"
+                    android:padding="16dp"
+                    android:orientation="horizontal"
+                    android:layout_marginEnd="16dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/left_lokasi"
+                            android:text="Ruang TU FTI 1"
+                            android:textColor="@color/white"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/left_tanggal"
+                            android:layout_width="202dp"
+                            android:layout_height="wrap_content"
+                            android:text="Kamis, 21 Maret"
+                            android:textColor="#FFFFFF"
+                            android:textSize="25dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/left_waktu"
+                            android:layout_weight="1"
+                            android:text="22.35"
+                            android:textSize="48dp"
+                            android:textColor="#FFFFFF" />
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/left_progress_layout">
+
+                        <ImageView
+                            android:id="@+id/left_qrcode"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginLeft="110dp"
+                            android:src="@drawable/qr" />
+
+                        <com.example.airacerdas.Ob.CircularProgressBar
+                            android:id="@+id/ruangtu"
+                            android:layout_width="131dp"
+                            android:layout_height="142dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="16dp" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <!-- Original Date and Time Section -->
+                <LinearLayout
+                    android:id="@+id/date_time_section"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/button"
+                    android:padding="16dp"
+                    android:orientation="horizontal"
+                    android:layout_marginEnd="16dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/lokasi"
+                            android:text="Ruang Dosen FTI"
+                            android:textColor="@color/white"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/tanggal"
+                            android:layout_width="202dp"
+                            android:layout_height="wrap_content"
+                            android:text="Kamis, 21 Maret"
+                            android:textColor="#FFFFFF"
+                            android:textSize="25dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/waktu"
+                            android:layout_weight="1"
+                            android:text="22.35"
+                            android:textSize="48dp"
+                            android:textColor="#FFFFFF" />
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/progress_layout">
+
+                        <ImageView
+                            android:id="@+id/qrcode"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginLeft="110dp"
+                            android:src="@drawable/qr" />
+
+                        <com.example.airacerdas.Ob.CircularProgressBar
+                            android:id="@+id/ruangdosen"
+                            android:layout_width="131dp"
+                            android:layout_height="142dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="16dp" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+        <LinearLayout
+            android:id="@+id/containerLayout1"
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@id/containerLayout">
+
+            <!-- Initial Date and Time Section -->
+            <LinearLayout
+                android:id="@+id/date_section"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button"
+                android:padding="16dp"
+                android:orientation="horizontal"
+                android:layout_marginBottom="16dp">
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/date_layout">
+                    <CalendarView
+                        android:id="@+id/calendarView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        android:layout_marginTop="16dp"
+                        android:layout_marginBottom="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:background="@drawable/tanggal"
+                        android:dateTextAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:weekDayTextAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:firstDayOfWeek="1" />
+
+
+
+
+
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>

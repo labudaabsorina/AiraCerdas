@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "404351547973",
+    "project_id": "airacerdas-98096",
+    "storage_bucket": "airacerdas-98096.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:404351547973:android:90df734d7d17e4a0eac12c",
+        "android_client_info": {
+          "package_name": "com.example.airacerdas"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAdZtGT60OqkzGyXAzNbXtAtZ6LzXfaPJY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

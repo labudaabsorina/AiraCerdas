@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">AiraCerdas</string>
+    <string-array name="jabatan_array">
+        <item>Pilih Jabatan</item>
+        <item>Manajemen FTI</item>
+        <item>OB FTI</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="edit_profile_picture">Edit Profile Picture</string>
+    <!-- Add this new string -->
+    <string name="msg_token_fmt">FCM Registration Token: %1$s</string>
+    <string name="default_notification_channel_id" translatable="false">channel_id_default</string>
+</resources>

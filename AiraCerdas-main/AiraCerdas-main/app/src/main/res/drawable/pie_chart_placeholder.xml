@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/drawable/pie_chart_placeholder.xml -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Background Circle -->
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="#4AA3D6" />
+        </shape>
+    </item>
+
+    <!-- Pie Slice -->
+    <item>
+        <rotate
+            android:fromDegrees="0"
+            android:toDegrees="270"
+            android:pivotX="50%"
+            android:pivotY="50%">
+            <shape android:shape="oval">
+                <solid android:color="#E57373" />
+                <size android:width="100dp" android:height="100dp"/>
+            </shape>
+        </rotate>
+    </item>
+</layer-list>
